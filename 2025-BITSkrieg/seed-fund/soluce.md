@@ -94,7 +94,7 @@ When we read the blockchain doc, we realize that we can have a maximum of 21 uni
 
 We realize that we can create several accounts, mine with them, and then make a transaction to the main account that the CTF monitors.
 
-So that's what we do via ./seed_fund.py
+So that's what we do via [this code](seed_fund.py).
 
 ![alt text](image.png)
 

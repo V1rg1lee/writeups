@@ -13,4 +13,4 @@ A common JWT vulnerability is “RS256 --> HS256”. We go from an asymmetrical 
 A JWT consists of three parts: HEADER.PAYLOAD.SIGNATURE
 It's easy to recreate the HEADER with the HS256 security standard and the PAYLOAD with the admin role.
 
-The code to do this is in ./baby_web.py
+The code to do this is [here](baby_web.py).
