@@ -28,7 +28,7 @@ user --> dreky
 
 password --> ohyeahboiiiahhuhh
 
-Once logged in, we get the following page:
+Once logged in, it fetch the welcome.png and, before load it, fetch another page, if we use burp, we get the following page:
 
 ```html
 HTTP/1.1 200 OK
