@@ -1,3 +1,3 @@
 # CTF
 
-All challenges are from [BITSKRIEG](https://ctf.bitskrieg.in/).
+All challenges descriptions, and instruction programs are from [BITSKRIEG](https://ctf.bitskrieg.in/).
