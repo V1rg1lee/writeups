@@ -23,7 +23,9 @@ const _0x3645b3=_0x4842;function _0x4842(_0x19d358,_0x49968c){const _0x2ad82b=_0
 ```
 
 We see that
+
 user --> dreky
+
 password --> ohyeahboiiiahhuhh
 
 Once logged in, we get the following page:
