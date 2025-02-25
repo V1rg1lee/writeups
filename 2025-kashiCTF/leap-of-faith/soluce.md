@@ -4,6 +4,8 @@ I liked playing Super Mario just for jumping from one place to another. Can you 
 
 # Soluce
 
+## Step 1, understand the challenge
+
 The challenge gives us an executable file: "chall". When we run it, it say:
 
 ```bash
@@ -111,6 +113,23 @@ We will try locally, it say that the "flag.txt" doesn't exist. So we will try in
 
 But when we try it just resend the adress.
 
-We need to smash the stack by sending "0x401269" 12 times (adress of LEA in the main function). 
+## Step 2, bypass the if statement with the RIP adress of the main function
 
-After that, we send "0x4011ba", it skip the if statement and display the flag.
+In the main function, we see:
+
+```asm
+0x401273 CALL printf@plt
+0x401277 LEA RAX, [RBP - 0x8]  ; Store the adress entered by the user
+0x40127A MOV RSI, RAX
+0x40127D LEA RDI, [DAT_004020a8]  ; "%p"
+0x401281 CALL __isoc99_scanf@plt  ; Read the adress entered by the user
+```
+
+What's happening here: scanf() reads the entered address and stores it in [RBP - 0x8] (a memory location). 
+The user can only give one address each time they run. But what if we send several addresses? If scanf() is called multiple times, then it fills the stack multiple times with our input.
+
+We need to smash the stack by sending "0x401269" 12 times (adress of LEA in the main function). 
+- Why this adress? Because it's the adress just before the scanf() function. So we can overwrite the stack until the RIP (Return Instruction Pointer) of the main function, and it asks us an adress to write each time thanks to the scanf() function.
+- Why 12 times? We need to overwrite until the RIP of the main function. There is 12 bytes until the RIP of the main function (we found it with gdb by testing different values).
+
+After that, we send "0x4011ba", it overwrites the RIP of the main function with the adress after the if statement in the win function. It skip the if statement and display the flag.
