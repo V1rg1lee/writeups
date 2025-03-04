@@ -303,4 +303,6 @@ Content-Type: text/html; charset=UTF-8
 </html>
 ```
 
+The SQL injection `'UNION SELECT NULL, version() --` worked because the application directly concatenates user input into a vulnerable SQL query. The `UNION SELECT` allows a second query to be appended to the results of the main query, and `version()` returns the version of the SQL server, proving that the query is executed and displayed without filtering. The addition of `NULL` is the number of columns expected, and the `--` comments out the rest of the original query, making it invalid and forcing our injection to run.
+
 So the flag is `VishwaCTF{SQL_1nj3ct10n_C4n_Qu3ry_Your_He4rt}`.
