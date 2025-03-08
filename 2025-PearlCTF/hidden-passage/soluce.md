@@ -58,7 +58,7 @@ Warning: include(page/../../../../var/www/flag): Failed to open stream: No such 
 Warning: include(): Failed opening 'page/../../../../var/www/flag' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 56
 ```
 
-Si I tried a lot of paths and finallay:
+Si I tried a lot of paths and finally:
 http://hidden-passage.ctf.pearlctf.in:30013/index.php?page=../../../../var/www/hidden/
 
 This displays the following content:
