@@ -47,3 +47,5 @@ get cookies for url: https://passwordless_authentication.challenges.cybersecurit
 Status Code: 200
 Response: CSC{y0uf0und4llmyf1n63rpr1n75}
 ```
+
+So the flag is `CSC{y0uf0und4llmyf1n63rpr1n75}`.
