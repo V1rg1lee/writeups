@@ -5,6 +5,8 @@ Read the source code of the server and send the correct fingerprints.
 
 # Soluce
 
+When we open the website, it says that we are not allowed to access the website. We need to find a way to bypass the server's checks.
+
 ### **Analyse of server (`server.go`)**
 By analyzing `server.go`, we see that the server **verifies four main elements** in incoming requests:
 1. **User-Agent** → Must be `Chrome 131.0.0.0`
