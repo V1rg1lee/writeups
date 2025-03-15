@@ -19,7 +19,7 @@ If **any of these values are incorrect**, the server returns **`403 Forbidden`**
 ### **Spoofing the Correct Fingerprints**
 To **bypass these checks**, we need to send a request that perfectly matches the server's expected values.
 
-**Manually crafting a request with the exact TLS parameters is difficult**, but there is a Python library that allows us to **simulate a browser with a specific TLS configuration**: [`tls-client`](https://github.com/FlorianREGAZ/tls-client).
+**Manually crafting a request with the exact TLS parameters is difficult**, but there is a Python library that allows us to **simulate a browser with a specific TLS configuration**: [`tls-client`](https://github.com/FlorianREGAZ/Python-Tls-Client).
 
 With [this script](passwordless_authentication.py), we were able to send a request **matching all required fingerprints**.
 
