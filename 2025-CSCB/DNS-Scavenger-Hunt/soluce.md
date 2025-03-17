@@ -221,10 +221,33 @@ SSL-Session:
 read R BLOCK
 ```
 
-So we will send a mail.
-It responds with:
+So we will send a mail:
 
 ```sh
+┌──(kali㉿kali)-[~]
+└─$ openssl s_client -connect 52.30.164.99:666 -starttls smtp -quiet -crlf
+Connecting to 52.30.164.99
+Didn't find STARTTLS in server response, trying anyway ..
+Can't use SSL_get_servername
+depth=0 C=BE, ST=Vlaams-Brabant, L=Leuven, O=DNS Belgium VZW, CN=mail.juistnuisance.be
+verify error:num=18:self-signed certificate
+verify return:1
+depth=0 C=BE, ST=Vlaams-Brabant, L=Leuven, O=DNS Belgium VZW, CN=mail.juistnuisance.be
+verify return:1
+530 5.7.0-Let's switch to a secure line
+mail from:<mail.juistnuisance.be>
+250 2.1.0 Ok
+rcpt to:<virgile.devolder@gmail.com>
+250 2.1.5 Ok
+data
+354 Start mail input; end with <CR><LF>.<CR><LF>
+Hello, You
+250 2.0.0 Ok: queued. You passed the test, the flag is hidden in the DANE (TLSA) record for this mail submission server
+```
+
+It responds with:
+
+```
 250 2.0.0 Ok: queued. You passed the test, the flag is hidden in the DANE (TLSA) record for this mail submission server
 ```
 
