@@ -12,6 +12,6 @@ sonic-visualiser enjoy.mp3
 
 Then we will click on `layer` and `Add Spectogram` (and select the 2 channels).
 
-![alt text](image.png)
+![alt text](media/image.png)
 
 So the flag is `CSC{DESTRUCT1VE_INTERF3RENC3}`.

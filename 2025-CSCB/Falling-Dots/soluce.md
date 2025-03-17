@@ -23,6 +23,6 @@ convert dots.gif -fuzz 10% -transparent black dots_transparent.gif
 
 Now we can open the gif in gimp and add all the frames to see the flag.
 
-![alt text](image.png)
+![alt text](media/image.png)
 
 So the flag is `CSC{WOW_I_SOLVED_THE_PIXELS_XR123}`.

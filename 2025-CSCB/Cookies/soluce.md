@@ -66,7 +66,7 @@ atob("VUVXRllXRkhCQDNEVUlEVk9VSlpVRVQp")
 
 It returns `UEWFYWGFB@3DUIDVOUJZUET)`
 
-We can find the SECRET_KEY with [this script](cookies_decode.js).
+We can find the SECRET_KEY with [this script](code/cookies_decode.js).
 
 The script returns: 
 
@@ -82,7 +82,7 @@ SECRET_KEY (Hex): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 So the SECRET_KEY is `000000000000000000000000`: an empty string `""`.
 
-Now we can generate a cookie with the value `admin` with [this script](cookies_generate.js).
+Now we can generate a cookie with the value `admin` with [this script](code/cookies_generate.js).
 
 The script returns:
 
@@ -94,6 +94,6 @@ New Cookie: admin%7C2025-03-15T20%3A14%3A30.738Z%7CU1RfXENRV0BYWzVWXVNfVV5eWUBWV
 
 We can replace the cookie on the website with the new one and refresh the page to get the flag.
 
-![alt text](image.png)
+![alt text](media/image.png)
 
 So the flag is `CSC{I_LOV3_COOK13S}`.

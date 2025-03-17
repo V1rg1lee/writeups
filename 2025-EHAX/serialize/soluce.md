@@ -227,7 +227,7 @@ We can suspect that it is a serialized object in Python. When we decode it, it t
 is the output of this command.
 
 
-We will try to execute an other command by changing the header with the code [here](serialize.py)
+We will try to execute an other command by changing the header with the code [here](code/serialize.py)
 
 We tried this with netcat, but we got the error 
 
@@ -235,7 +235,7 @@ We tried this with netcat, but we got the error
 <h1>32512</h1>
 ```
 
-on the html page, indicating that netcat is probably not available on the remote machine. So we tried with another way, the one in the [code](serialize.py).
+on the html page, indicating that netcat is probably not available on the remote machine. So we tried with another way, the one in the [code](code/serialize.py).
 
 We execute this command to listen on the port 8008 to get a reverse shell:
 

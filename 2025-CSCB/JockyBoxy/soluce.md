@@ -2,7 +2,7 @@
 
 We found this harmless device in our office.
 
-![alt text](image.png)
+![alt text](media/image.png)
 
 We plugged it into our laptop, and the console printed a funny joke. It can't be harmful, right?
 

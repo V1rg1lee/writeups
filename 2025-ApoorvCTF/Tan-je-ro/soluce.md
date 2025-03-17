@@ -76,7 +76,7 @@ If we put the JWT on [jwt.io](https://jwt.io/), we can see that:
 
 We can see that the token is signed with the RS256 algorithm. We will use the public key as a secret to sign our own token with the admin field set to true in HS256 algorithm.
 
-The code to do this is [here](tan_je_ro.py).
+The code to do this is [here](code/tan_je_ro.py).
 
 Be careful, python's JWT library has a security so that it is not possible to use a public key to sign a JWT. So you have to modify 'algorithms.py' of the library, the function 'prepare_key' to remove the security.
 

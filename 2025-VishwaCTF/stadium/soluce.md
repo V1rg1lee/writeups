@@ -4,7 +4,7 @@ My friend wanted to play a cricket match, he told me to find the best place to p
 
 # Soluce
 
-![Stadium image](image.png)
+![Stadium image](media/image.png)
 
 I took the image and put it on Google Image. I found that the stadium is the [Saling Cricket Stadium Ghanche](https://www.google.com/search?client=firefox-b-e&q=Ghanche+cricket+stadium).
 
