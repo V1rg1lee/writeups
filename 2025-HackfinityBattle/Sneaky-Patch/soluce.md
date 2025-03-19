@@ -2,8 +2,6 @@
 
 A high-value system has been compromised. Security analysts have detected suspicious activity within the kernel, but the attacker’s presence remains hidden. Traditional detection tools have failed, and the intruder has established deep persistence. Investigate a live system suspected of running a kernel-level backdoor.
 
-
-
 # Soluce
 
 Let's start by checking the system information using the following commands:
