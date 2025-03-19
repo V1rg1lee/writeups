@@ -1,6 +1,5 @@
 # Challenge description
 
-
 We may have found a way to break into the DarkInject blockchain, exploiting a vulnerability in their system. This might be our only chance to stop them—for good.
 
 Note: To start the target machine, click the Start Machine button:
