@@ -26,7 +26,7 @@ We can do this with [this script](code/order.py).
 This gives us:
 
 ```sh
-┌──(virgile㉿localhost)-[~/Documents/writeups]
+┌──(virgile㉿localhost)-[~]
 └─$ python3 order.py
 b'ORDER: Attack at dawn. Target: THM{the_hackfinity_highschool}.'
 ```
