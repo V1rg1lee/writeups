@@ -7,9 +7,9 @@ We've retrieved a set of AWS credentials from one of Cipher's soldiers. He told 
 We start by configuring the AWS CLI with the provided credentials:
 
 ```sh
-export AWS_ACCESS_KEY_ID="ACCESS_KEY_ID"
-export AWS_SECRET_ACCESS_KEY="SECRET_ACCESS"
-export AWS_DEFAULT_REGION="us-west-2"
+export AWS_ACCESS_KEY_ID="REDACTED"
+export AWS_SECRET_ACCESS_KEY="REDACTED"
+export AWS_DEFAULT_REGION="REDACTED"
 ```
 
 We can now list the contents of the "secret-messages" bucket:
