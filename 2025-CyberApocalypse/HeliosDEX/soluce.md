@@ -188,7 +188,6 @@ contract Setup {
         return player.balance >= 20 ether;
     }
 }
-
 ```
 
 The DEX offers the exchange of tokens (ELD, MAL, HLS) created via OpenZeppelin ERC20. However, when they are created, the contract only mints 1000 units (instead of 1000 * 1e18), while calculations in the DEX are performed using 1e18 to normalize values.
