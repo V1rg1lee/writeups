@@ -5,7 +5,7 @@ In Eldoria, a once-innocent website called “Tales for the Brave” has become 
 
 # To specify
 
-Challenge made with the help of [Samir](https://github.com/Samir0x20) and [Seahorse Raiser]().
+Challenge made with the help of [Samir](https://github.com/Samir0x20) and [Seahorse Raiser](https://github.com/arthurco).
 
 # Soluce
 
