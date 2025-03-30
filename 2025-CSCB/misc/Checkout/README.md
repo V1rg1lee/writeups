@@ -232,6 +232,6 @@ Thank you, team 'FireWaffles'! We have received your order, and will soon reach 
 
 Here is the ticket I received:
 
-![alt text](image.png)
+![alt text](media/image.png)
 
 So the flag is `CSC{WH04_YoU_M34N_wE_C4N_G37_1T?!}`.
