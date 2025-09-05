@@ -20,7 +20,7 @@ And login:
 
 ```js
 const email = normalizeEmail(req.body.email)           // ← email BRUT
-bcrypt.compareSync(password_saisi, user.password)      // bcrypt truncates to 72 bytes
+bcrypt.compareSync(password_saisi, user.password)      // bcrypt truncates to 72 bytes https://pkg.go.dev/golang.org/x/crypto/bcrypt#pkg-overview
 ```
 
 So if we register with an email of 72 bytes, we know that the password will be exactly this email.
